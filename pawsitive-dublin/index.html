@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pawsitive Dublin: The High-Authority Directory for dog-friendly venues, parks, and transit in Dublin.">
+  <title>Pawsitive Dublin | Dublin, Discovered With Your Dog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="brand">
+        <span class="logo-icon">🐾</span>
+        <span class="brand-name">Pawsitive Dublin</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#directory" class="nav-link">Directory</a>
+        <a href="#parks" class="nav-link">Parks & Trails</a>
+        <a href="#transit" class="nav-link">Transit Guide</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-outline" id="join-btn">Join Newsletter</button>
+        <button class="menu-toggle" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/hero_dog_cafe_1775083287127.png" alt="A golden retriever outside a cafe in Dublin" class="hero-image">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <span class="badge badge-primary">Hyper-Local Data Aggregator</span>
+      <h1 class="hero-title">Dublin, Discovered<br>With Your Dog.</h1>
+      <p class="hero-subtitle">The verified directory for pet-inclusive cafes, pubs, and transit. Experience the "Paw-Pound" economy without spatial friction.</p>
+
+      <!-- Search & Filters -->
+      <div class="search-panel glassmorphism">
+        <div class="search-inputs">
+          <div class="input-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="e.g. Dublin 7, Stoneybatter">
+          </div>
+          <div class="divider"></div>
+          <div class="input-group">
+            <label for="category">Category</label>
+            <select id="category">
+              <option value="">Any Category</option>
+              <option value="cafe">Cafés & Brunch</option>
+              <option value="pub">Pubs</option>
+              <option value="park">Parks</option>
+            </select>
+          </div>
+          <button class="btn btn-primary search-btn">Find a Spot</button>
+        </div>
+        
+        <div class="quick-filters">
+          <span class="filter-label">Quick Filters:</span>
+          <button class="pill-btn active">✓ Open Now</button>
+          <button class="pill-btn">🏢 Indoor Seating</button>
+          <button class="pill-btn">🐕 Big Dogs Welcome</button>
+          <button class="pill-btn">🚆 Near DART</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Directory -->
+  <section id="directory" class="directory-section container">
+    <div class="section-header">
+      <h2 class="section-title">Verified Hotspots</h2>
+      <p class="section-desc">Discover our top-rated locations with rigorous Micro-Accessibility data audits.</p>
+    </div>
+
+    <div class="grid cards-grid">
+      <!-- Card 1 -->
+      <article class="card">
+        <div class="card-image-wrap">
+          <img src="images/two_pups_coffee_1775083302340.png" alt="Interior of Two Pups Coffee with a Beagle" class="card-image">
+          <div class="card-badges">
+            <span class="pawsitive-verified"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Pawsitive Verified</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">Dublin 8 • Café • Low Noise</div>
+          <h3 class="card-title">Two Pups Coffee</h3>
+          <p class="card-details">Premium indie coffee shop. Specializing in inclusive indoor seating for all breeds.</p>
+          <div class="card-tags">
+            <span class="tag">Indoor Allowed</span>
+            <span class="tag">Water Station</span>
+          </div>
+          <div class="card-footer">
+            <div class="realtime-status active-status"><span class="dot green"></span> Smooth (Not Busy)</div>
+            <button class="btn btn-small btn-primary">Get Directions</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <div class="card-image-wrap">
+          <img src="images/dublin_park_dogs_1775083314167.png" alt="Family walking dog in Dublin Park" class="card-image">
+          <div class="card-badges">
+            <span class="pawsitive-verified"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Pawsitive Verified</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">Dublin 2 • Park • Off-Leash</div>
+          <h3 class="card-title">St. Stephen's Green (Perimeter)</h3>
+          <p class="card-details">Real-time off-leash schedule aligned with local council bylaws. Beautiful, sprawling greenery.</p>
+          <div class="card-tags">
+            <span class="tag">Big Dogs Welcome</span>
+            <span class="tag">Biodiversity Safe</span>
+          </div>
+          <div class="card-footer">
+            <div class="realtime-status warning-status"><span class="dot orange"></span> Leash Required after 11AM</div>
+            <button class="btn btn-small btn-outline">View Itinerary</button>
+          </div>
+        </div>
+      </article>
+      
+      <!-- Card 3 placeholder -->
+      <article class="card fake-card">
+        <div class="empty-state-content">
+          <div class="icon-circle">🗺️</div>
+          <h3>Plan a Hike-to-Pub Route</h3>
+          <p>Sync transit schedules with dynamic map data to find car-free escapes.</p>
+          <button class="btn btn-primary" style="margin-top: 1rem">Explore Mapbox</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section class="cta-section">
+    <div class="container cta-container glassmorphism-dark">
+      <h2>Join the Paw-Pound Economy</h2>
+      <p>Sign up to our proprietary 'Weekend Guide' newsletter designed to help navigate the spatial friction of Dublin.</p>
+      <form class="cta-form">
+        <input type="email" placeholder="Enter your email (e.g., dublin.dog@example.com)" required>
+        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pawsitive Dublin. Built for MSC Digital Design CA2 Assignment.</p>
+        <div class="footer-links">
+          <a href="#">Schema Verified</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">WCAG 2.2 Compliant</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
